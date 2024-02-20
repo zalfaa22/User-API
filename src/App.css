@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #171823;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,5 +34,84 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 0px) {
+  .email {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    max-width: 100px !important; /* Sesuaikan dengan lebar yang diinginkan */
+  }
+  .email-width {
+    max-width: 100px;
+  }
+}
+
+@media (min-width: 336px) {
+  .email {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    max-width: 120px !important; /* Sesuaikan dengan lebar yang diinginkan */
+  }
+  .email-width {
+    max-width: 120px;
+  }
+}
+
+@media (min-width: 359px) {
+  .email {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    max-width: 140px !important; /* Sesuaikan dengan lebar yang diinginkan */
+  }
+  .email-width {
+    max-width: 140px;
+  }
+}
+
+@media (min-width: 375px) {
+  .email {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    max-width: 190px !important; /* Sesuaikan dengan lebar yang diinginkan */
+  }
+  .email-width {
+    max-width: 190px;
+  }
+}
+
+@media (min-width: 768px) {
+  .email {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    max-width: 130px !important; /* Sesuaikan dengan lebar yang diinginkan */
+  }
+  .email-width {
+    max-width: 100px;
+  }
+}
+
+@media (min-width: 820px) {
+  .email-width {
+    max-width: 190px;
+  }
+}
+
+@media (min-width: 992px) {
+  .email-width {
+    max-width: 90px;
+  }
+}
+
+@media (min-width: 1124px) {
+  .email-width {
+    max-width: 130px;
+  }
+}
+
+@media (min-width: 1251px) {
+  .email-width {
+    max-width: 190px;
   }
 }
