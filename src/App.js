@@ -7,7 +7,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users") // Ganti URL dengan URL API Anda
+    fetch("https://jsonplaceholder.typicode.com/users") 
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error("Error fetching data:", error));
@@ -27,11 +27,11 @@ function App() {
         className="text-center justify-content-center"
         style={{ backgroundColor: "#171823" }}
       >
-        <h1 className="text-white text-center pt-5">USER LIST</h1>
-        <div className="d-flex mt-4 justify-content-center mb-4">
+        <h1 className="text-white text-center pt-5 mt-3 fw-bold" style={{letterSpacing: "15px"}}>USER LIST</h1>
+        <div className="d-flex mt-4 justify-content-center mb-2">
           <input
             type="text"
-            className="p-2 col-4 ps-3 rounded-2"
+            className="p-2 col-9 col-md-7 col-lg-5 ps-3 rounded-2"
             placeholder="Search User"
             value={searchTerm}
             onChange={handleSearch}
@@ -40,7 +40,7 @@ function App() {
         </div>
 
         {/* Card */}
-        <div className="py-md-5">
+        <div className="py-4 py-md-5">
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0 px-1 px-md-5">
             {filteredData.map((item) => (
               <div className="group p-2">
